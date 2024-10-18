@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            width: 150px;
+            height: 40px;
+            background-color: beige;
+            color: black;
+            border: 1px solid gray;
+            border-radius: 18px;
+            font-weight: 600;
+        }
+
+        input {
+            width: 300px;
+            height: 40px;
+            text-align: center;
+            background-color: rgb(246, 246, 242);
+            color: black;
+            border: 1px solid gray;
+            border-radius: 18px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Grade Calculator</title>
+    </head>
+
+    <body>
+
+
+
+
+
+    </body>
+
+    </html>
+
+    <h1>Day two all practicle</h1>
+
+    <!-- practicle two -->
+    <button onclick="fun2()">Dynamic</button> <br>
+
+    <!-- practicle three -->
+    <button onclick="fullname()">fullname</button> <br>
+
+    <!-- practicle for -->
+    <button onclick="mynumber()">number</button> <br>
+
+    <!-- practcle five -->
+    <button onclick="calculateGrade()">Check Grade</button> <br>
+
+    <!-- practicle six -->
+    <button onclick="checkNumber()">Check Number</button> <br>
+
+    <!-- practicle seven -->
+
+    <button onclick="checkDiscount()">Check Discount</button>
+
+
+    <script>
+
+        //practicle one
+
+        function fun1(myclass) {
+
+            console.log("Hello, " + myclass + "!");
+        }
+
+        fun1("Alic");
+        fun1("Bob");
+
+
+
+        // practicle two
+
+        let counter = 0;
+
+        function fun2(classtwo) {
+            counter++;
+            console.log('counter: ' + counter);
+
+        }
+
+
+        //practicle three
+
+
+        var person = {
+            firstname: "Raju",
+            lastname: "sharma"
+        }
+
+        function fullname() {
+            console.log(person.firstname + person.lastname);
+        }
+
+
+        // practicle for
+
+        function mynumber() {
+            number = 11;
+            if (number % 2 === 0) {
+                console.log('even')
+            } else {
+                console.log('odd');
+            }
+        }
+
+
+        // practicle five
+
+        function calculateGrade() {
+            let grade = 99;
+
+            if (grade > 100) {
+                console.log("This is not a valid number");
+            } else if (grade >= 90 && grade <= 100) {
+                console.log("Grade: A");
+            } else if (grade >= 80 && grade <= 89) {
+                console.log("Grade: B");
+            } else if (grade >= 70 && grade <= 79) {
+                console.log("Grade: C");
+            } else if (grade >= 60 && grade <= 69) {
+                console.log("Grade: D");
+            } else if (grade >= 0 && grade <= 59) {
+                console.log("Grade: F");
+            } else {
+                console.log("Invalid input");
+            }
+        }
+
+
+
+        // practicle six
+
+        function checkNumber(num) {
+            if (num === 10) {
+                console.log("The number is zero.");
+            } else if (num > 0) {
+                console.log("The number is positive.");
+            } else {
+                console.log("The number is negative.");
+            }
+        }
+
+        let number = 12;
+        // checkNumber(number);
+
+
+        // practicle seven
+
+
+        let Checkperson = {
+            name:"Raju",
+            age: 40
+        };
+        
+        function checkDiscount() {
+            if (Checkperson.age <= 50 && Checkperson.age >= 40) {
+                console.log("discount 40%");
+            }
+            else if (Checkperson.age < 40 && Checkperson.age > 30) {
+                console.log("discount 30%");
+            }
+            else if (Checkperson.age < 30 && Checkperson.age > 20) {
+                console.log("discount 20%");
+            }
+            else if (Checkperson.age < 20 && Checkperson.age > 0) {
+                console.log("discount 10%");
+            } else if (Checkperson.age >= 50) {
+                console.log("Raju, sorry, no discount available.");
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
